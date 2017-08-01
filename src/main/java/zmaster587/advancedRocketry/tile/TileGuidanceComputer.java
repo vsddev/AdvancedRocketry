@@ -217,7 +217,7 @@ public class TileGuidanceComputer extends TileInventoryHatch implements IModular
 		super.setInventorySlotContents(slot, stack);
 
 		//If the item in the slot is modified then reset dimid
-		if(!stack.isEmpty())
+		if(stack != null && !stack.isEmpty())
 			destinationId = -1;
 	}
 
